@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        #myButton {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        #counter {
+            margin-top: 20px;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+
+    <button id="myButton">Нажми меня!</button>
+    <div id="counter">Количество нажатий: 0</div>
+
+    <script>
+        let count = 0;
+
+        // Обработчик события нажатия на кнопку
+        document.getElementById('myButton').addEventListener('click', function() {
+            count++;
+            document.getElementById('counter').innerText = 'Количество нажатий: ' + count;
+        });
+    </script>
+
+</body>
+</html>

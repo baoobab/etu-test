@@ -14,4 +14,7 @@ private:
         delete node;
         node = nullptr;
     }
+public:
+	AVLTree() {}
+	~AVLTree() {}
 }
